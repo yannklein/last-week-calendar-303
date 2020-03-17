@@ -1,6 +1,6 @@
 .card-product {
   overflow: hidden;
-  height: 100px;
+  height: 128px;
   background: white;
   box-shadow: 0 0 16px rgba(0,0,0,0.2);
   display: flex;
@@ -13,7 +13,7 @@
 
 .card-product-daytime {
   height: 100%;
-  min-width: 100px;
+  min-width: 92px;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -29,14 +29,25 @@
   margin: 0;
 }
 
+.card-product-infos {
+  height: 100%;
+  padding: 16px;
+}
+
 .card-product-infos h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
+  /*height: 2em;*/
 }
+
 
 .card-product-infos h2.key-day {
   color: red;
+}
+
+.card-product-infos a {
+  text-decoration: none;
 }
 
 .card-product-infos p {
@@ -45,11 +56,9 @@
   opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
+  height: 3em;
 }
 
-.card-product-infos {
-  padding: 16px;
-}
 
 .card-product-titles {
   display: flex;
@@ -102,12 +111,20 @@
 }
 
 @media screen and (max-width: 800px) {
+  .card-product {
+    height: 92px;
+  }
+
   .card-product-titles h2 {
     font-size: 32px;
   }
   .card-product-infos h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .card-product-infos p {
     font-size: 16px;
+  }
+
+  .card-product-infos {
+    padding: 8px;
   }
