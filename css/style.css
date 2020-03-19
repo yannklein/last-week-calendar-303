@@ -1,7 +1,7 @@
 @import url(card.css);
 
 .title {
-  margin: 48px;
+  margin: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 500px) {
   .title {
-    margin: 64px 16px;
+    margin: 32px 16px;
   }
   .title img {
     margin-right: 16px;
